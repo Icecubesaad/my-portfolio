@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Gemunu+Libre&family=Inter+Tight:wght@300&family=Merriweather:wght@300&family=Montserrat&family=Nova+Round&family=Poppins:wght@300&family=Rajdhani:wght@500&family=Roboto:wght@300&family=Secular+One&family=Zen+Dots&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #242635;
+}
+.Navbar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 13vh;
+}
+.menu {
+  justify-self: center;
+  align-self: center;
+}
+.menu ul {
+  display: flex;
+}
+.menu-items {
+  list-style: none;
+  margin-right: 13px;
+  margin-left: 13px;
+}
+.menu-items a {
+  text-decoration: none;
+  color: white;
+  font-family: "Nova Round", cursive;
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+}
+.menu-items a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.menu-items a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.logo a {
+  text-decoration: none;
+  color: #f79f1a;
+  font-family: "Nova Round", cursive;
+  font-size: 1.7rem;
+}
+.logo {
+  margin-left: 40px;
+  align-self: center;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 87vh;
+  width: 100%;
+}
+.intro {
+  align-self: center;
+  padding-right: 30px;
+}
+.heading {
+  color: #f79f1a;
+  font-family: "Nova Round", cursive;
+  font-size: 1.7rem;
+}
+.para {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "poppins";
+}
+.btn {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  font-family: "Gemunu Libre", sans-serif;
+  color: white;
+  transition: 0.3s;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+.btn:hover {
+  background-color: #f79f1a;
+}
+#about h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+#about {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.para1 {
+  color: white;
+  font-size: 1rem;
+  margin-left: 70px;
+  font-family: "poppins";
+  width: 600px;
+}
+.para2 {
+  color: white;
+  font-size: 1rem;
+  font-family: "poppins";
+  width: 100%;
+  text-align: center;
+}
+.heading2 {
+  color: #f79f1a;
+  font-family: "Nova Round", cursive;
+  font-size: 1.1rem;
+  margin-left: 70px;
+}
+.left {
+  padding-left: 30px;
+}
+.cards {
+  justify-self: center;
+  align-self: center;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+  margin-right: 20px;
+}
+.card-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c21531;
+  height: 200px;
+  justify-self: center;
+  align-self: center;
+  width: 300px;
+}
+.heading1 {
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  color: #f79f1a;
+}
+#numbers {
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+}
+#numbers1 {
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#hehe {
+  text-align: center;
+}
+.forums {
+  width: 500px;
+  height: 500px;
+  padding-top: 40px;
+  margin-top: 70px;
+}
+.forums input {
+  height: 40px;
+  width: 400px;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 9px;
+  padding-left: 30px;
+  font-family: "poppins", cursive;
+  font-size: 1.1rem;
+}
+.forums input::placeholder {
+  color: black;
+  font-family: "poppins", cursive;
+  font-size: 1.1rem;
+}
+.heading3 {
+  color: #f79f1a;
+  font-family: "poppins", cursive;
+  font-size: 1.1rem;
+  margin-left: 40px;
+}
+.btn1 {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  font-family: "Gemunu Libre", sans-serif;
+  color: white;
+  transition: 0.3s;
+  margin-left: 150px;
+}
+.btn1:hover {
+  background-color: #f79f1a;
+}
+.projects {
+  height: 100vh;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 30px;
+}
+.grid-card {
+  height: 370px;
+  width: 550px;
+  justify-self: center;
+  overflow: hidden;
+}
+.img {
+  height: 270px;
+  width: 450px;
+  transition: 1.5s;
+}
+.img:hover {
+  transform: scale(1.09);
+}
+.hamburger {
+  display: none;
+}
+.heading4 {
+  color: #f79f1a;
+  font-family: "Nova Round", cursive;
+  font-size: 1.1rem;
+  margin-top: 80px;
+}
+#side-bar {
+  width: 0px;
+  position: absolute;
+  z-index: 99;
+  background-color: #f79f1a;
+  height: 100vh;
+  right: 0;
+  display: none;
+}
+#btn-close {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  margin-right: 30px;
+  font-family: "Nova Round";
+  margin-top: 30px;
+  font-size: 2.1rem;
+}
+
+#close {
+  display: none;
+  background-color: transparent;
+  border: transparent;
+  font-size: 2.1rem;
+  color: #242635;
+  cursor: pointer;
+}
+.menu-items-s {
+  list-style: none;
+  display: none;
+}
+.menu-items-s a {
+  text-decoration: none;
+  color: white;
+  font-family: "Nova Round", cursive;
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+}
+#menu-s {
+  display: none;
+  transition: 1000ms;
+}
+
+@media screen and (max-width: 450px) {
+	.grid{
+		display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 30px;
+	}
+	body{
+		background-color: yellow;
+	}
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+  }
+  .para1 {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .projects{
+	height: 100%;
+  }
+  #menu-s ul {
+    display: block;
+    margin-top: 100px;
+    overflow: hidden;
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    justify-self: right;
+    align-self: center;
+    margin-right: 30px;
+  }
+  .btn {
+  }
+  .contact{
+	width: 100%;
+  }
+  .forums{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  .btn1{
+	margin-left: 0px;
+  }
+  .forums input{
+	width: 80%;
+	margin-left: 0px;
+  }
+.btn1{
+	background-color: transparent;
+	border: transparent;
+	cursor: pointer;
+	text-align: center;
+	width: 50%;
+	height: 60px;
+	border: 2px solid white;
+	border-radius: 7px;
+	font-size: 1.3rem;
+	font-family: "Gemunu Libre", sans-serif;
+	color: white;
+	transition: 0.3s;
+}
+  .muwah {
+    background-color: transparent;
+    border: transparent;
+    font-size: 3rem;
+    color: #f79f1a;
+    cursor: pointer;
+  }
+  .heading {
+    margin-left: 40px;
+  }
+  #about h1 {
+    text-align: center;
+    width: 100%;
+    padding-left: 30px;
+    font-family: "poppins";
+    color: #f79f1a;
+  }
+  #numbers {
+    font-size: 3rem;
+  }
+  #numbers1 {
+    font-size: 3rem;
+  }
+  #side-bar {
+    display: block;
+    transition: 900ms;
+  }
+  #btn-close {
+    display: block;
+  }
+  .contact{
+	overflow: hidden;
+  }
+  .btn {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .pic {
+    display: none;
+  }
+
+
+  .intro {
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-self: center;
+    margin-left: 30px;
+  }
+  .menu-items-s {
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  .card-items {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+  }
+  .card {
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+}
+@media screen and (max-width: 650px) {
+	.grid-card{
+		width: 90%;
+	}
+	.img{
+		width: 90%;
+	}
+	.grid{
+		display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 30px;
+	}
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+  }
+  .para1 {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #menu-s ul {
+    display: block;
+    margin-top: 100px;
+    overflow: hidden;
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    justify-self: right;
+    align-self: center;
+    margin-right: 30px;
+  }
+  .btn {
+  }
+
+  .muwah {
+    background-color: transparent;
+    border: transparent;
+    font-size: 3rem;
+    color: #f79f1a;
+    cursor: pointer;
+  }
+  .heading {
+    margin-left: 40px;
+  }
+  #about h1 {
+    text-align: center;
+    width: 100%;
+    padding-left: 30px;
+    font-family: "poppins";
+    color: #f79f1a;
+  }
+  #numbers {
+    font-size: 3rem;
+  }
+  #numbers1 {
+    font-size: 3rem;
+  }
+  #side-bar {
+    display: block;
+    transition: 900ms;
+  }
+  #btn-close {
+    display: block;
+  }
+  .btn {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .pic {
+    display: none;
+  }
+
+  .intro {
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-self: center;
+    margin-left: 30px;
+  }
+  .menu-items-s {
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+  .card-items {
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    justify-self: right;
+  }
+  .cards {
+    width: 100%;
+  }
+}
