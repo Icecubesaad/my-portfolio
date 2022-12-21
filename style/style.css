@@ -281,6 +281,7 @@ body {
   font-size: 2.1rem;
   color: #242635;
   cursor: pointer;
+  transition: 300ms;
 }
 .menu-items-s {
   list-style: none;
