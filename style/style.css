@@ -100,18 +100,28 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+
+/* about page styling */
 #about {
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-
 .para1 {
   color: white;
   font-size: 1rem;
   margin-left: 70px;
   font-family: "poppins";
   width: 600px;
+}
+.heading_about{
+  color: #f79f1a;
+  font-size: 1.8rem;
+  font-family: 'Nova Round';
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .para2 {
   color: white;
@@ -222,8 +232,12 @@ body {
 .btn1:hover {
   background-color: #f79f1a;
 }
+
+/* project styling */
+
+
 .projects {
-  height: 100vh;
+  height: 100%;
 }
 .grid {
   display: grid;
@@ -304,22 +318,54 @@ body {
 	color: white;
 }
 @media screen and (max-width: 450px) {
+  #hehe{
+    width: 100%;
+    text-align: center;
+  }
 	.grid{
 		display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(4, 1fr);
   row-gap: 30px;
 	}
+  .grid-card{
+    width: 90%;
+  }
+  .grid-items{
+    width: 110%;
+  }
+  .grid-card{
+    height: 100%;
+  }
+  
+  .img{
+    width: 90%;
+    height: 90%;
+  }
+  .heading4{
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }
+  .heading2{
+    font-size: 0.7rem;
+    margin-left: -20px;
+  }
+  .para1{
+    width: 100%;
+    font-size: 0.7rem;
+    margin-left: -20px;
+  }
+  .heading{
+    font-size: 1.4rem;
+    margin-left: -20px;
+    margin-bottom: 10px;
+  }
   #about {
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
     height: 100%;
-  }
-  .para1 {
-    width: 100%;
-    margin-left: 0px;
   }
   .projects{
 	height: 100%;
@@ -343,18 +389,29 @@ body {
   .contact{
 	width: 100%;
   }
+  .btn1{
+    width: 80%;
+  }
+  .button-flex{
+    width: 100%;
+    display: flex
+    ;
+    justify-content:center ;
+  }
   .forums{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+  align-items: center;
+  margin-top: 20px;
   }
   .btn1{
 	margin-left: 0px;
   }
   .forums input{
 	width: 80%;
-	margin-left: 0px;
+	margin-left: 20px;
+
   }
 .btn1{
 	background-color: transparent;
@@ -376,9 +433,6 @@ body {
     font-size: 3rem;
     color: #f79f1a;
     cursor: pointer;
-  }
-  .heading {
-    margin-left: 40px;
   }
   #about h1 {
     text-align: center;
@@ -411,7 +465,12 @@ body {
     display: none;
   }
 
-
+  .forums{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
   .intro {
     padding-right: 0px;
     display: flex;
@@ -442,12 +501,6 @@ body {
   }
 }
 @media screen and (max-width: 650px) {
-	.grid-card{
-		width: 90%;
-	}
-	.img{
-		width: 90%;
-	}
 	.grid{
 		display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -461,10 +514,6 @@ body {
     align-items: center;
     overflow: hidden;
     height: 100%;
-  }
-  .para1 {
-    width: 100%;
-    margin-left: 0px;
   }
   #menu-s ul {
     display: block;
@@ -489,9 +538,6 @@ body {
     font-size: 3rem;
     color: #f79f1a;
     cursor: pointer;
-  }
-  .heading {
-    margin-left: 40px;
   }
   #about h1 {
     text-align: center;
